@@ -3,27 +3,37 @@ import styled from 'styled-components';
 
 const QuizQuestion = ({ question, handleAnswer }) => {
   return (
-    <QuestionContainer>
-      <QuestionTitle>{question.description}</QuestionTitle>
-      <OptionsContainer>
-        {question.options && question.options.length > 0 ? (
-          question.options.map((option) => (
-            <OptionButton
-              key={option.id}
-              onClick={() => handleAnswer(option.is_correct)}
-            >
-              {option.description}
-            </OptionButton>
-          ))
-        ) : (
-          <NoOptionsText>No options available.</NoOptionsText>
-        )}
-      </OptionsContainer>
-    </QuestionContainer>
+    <PageContainer>
+      <QuestionContainer>
+        <QuestionTitle>{question.description}</QuestionTitle>
+        <OptionsContainer>
+          {question.options && question.options.length > 0 ? (
+            question.options.map((option) => (
+              <OptionButton
+                key={option.id}
+                onClick={() => handleAnswer(option.is_correct)}
+              >
+                {option.description}
+              </OptionButton>
+            ))
+          ) : (
+            <NoOptionsText>No options available.</NoOptionsText>
+          )}
+        </OptionsContainer>
+      </QuestionContainer>
+    </PageContainer>
   );
 };
 
 // Styled components
+const PageContainer = styled.div`
+  background-color: #9333ea;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const QuestionContainer = styled.div`
   max-width: 800px;
   margin: 2rem auto;
@@ -49,7 +59,7 @@ const OptionsContainer = styled.div`
 const OptionButton = styled.button`
   padding: 12px 20px;
   font-size: 1rem;
-  background-color: #4caf50;
+  background-color: #3b82f6;
   color: white;
   border: none;
   border-radius: 5px;
@@ -57,13 +67,13 @@ const OptionButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #45a049;
+    background-color:rgb(38, 129, 25);
     transform: scale(1.05);
   }
 
   &:focus {
     outline: none;
-    border: 2px solid #45a049;
+    border: 2px solid #2563eb;
   }
 
   &:active {
