@@ -84,6 +84,13 @@ This will generate an optimized `dist/` folder that can be deployed to **Netlify
 3. Commit your changes and push.
 4. Open a pull request.
 
+# Screenshots And Video
+![Image](https://github.com/user-attachments/assets/d6631d05-8ac8-404e-8d10-c91a0c122246)
+![Image](https://github.com/user-attachments/assets/5ceb17a0-5db0-4fbf-a47e-e6e358f98874)
+![Image](https://github.com/user-attachments/assets/24149829-46b5-4323-bc30-122393f37803)
+![Image](https://github.com/user-attachments/assets/5e8eb789-976d-41be-87b4-7369f98ccdc7)
+
+
 ## License
 This project is open-source.
 
