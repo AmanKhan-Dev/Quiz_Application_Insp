@@ -90,6 +90,7 @@ This will generate an optimized `dist/` folder that can be deployed to **Netlify
 ![Image](https://github.com/user-attachments/assets/24149829-46b5-4323-bc30-122393f37803)
 ![Image](https://github.com/user-attachments/assets/5e8eb789-976d-41be-87b4-7369f98ccdc7)
 
+https://github.com/user-attachments/assets/b439ed4b-df5f-424e-bfa6-3985e6575150
 
 ## License
 This project is open-source.
